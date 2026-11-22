@@ -1,109 +1,1210 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<script>document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="السيرة الذاتية الرقمية - مودة سمير كاشقري">
-<title>السيرة الذاتية | مودة سمير كاشقري</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مودة سمير كاشقري | السيرة الذاتية</title>
+<meta name="description" content="السيرة الذاتية الرقمية لمودة سمير كاشقري — أخصائية معلومات متخصصة في الأرشفة الرقمية وإدارة الوثائق والسجلات، وطالبة ماجستير الذكاء الاصطناعي.">
+<meta name="theme-color" content="#0b2b29">
+<meta property="og:title" content="مودة سمير كاشقري | السيرة الذاتية">
+<meta property="og:description" content="أخصائية معلومات — الأرشفة الرقمية وإدارة الوثائق والسجلات.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23c19a5b' d='M12 1.8 14.3 9.7 22.2 12l-7.9 2.3L12 22.2 9.7 14.3 1.8 12l7.9-2.3Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#172b4d;--blue:#315b88;--gold:#c7a45b;--ink:#263247;--muted:#68758a;--paper:#fff;--bg:#f3f5f8;--line:#e5eaf0}
-*{box-sizing:border-box}
+/* ============================================================
+   مودة سمير كاشقري — سيرة ذاتية رقمية
+   ============================================================ */
+:root{
+  --ink:#0b2b29;
+  --ink-2:#123f3a;
+  --teal:#0f4c46;
+  --teal-soft:#e7efeb;
+  --gold:#c19a5b;
+  --gold-light:#e3c690;
+  --gold-deep:#826330;
+  --cream:#f6f2e9;
+  --paper:#fffdf8;
+  --muted:#5c6f6a;
+  --line:rgba(15,59,54,.1);
+  --shadow:0 26px 60px -38px rgba(11,43,41,.4);
+  --radius:22px;
+  --font-body:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  --font-display:'Almarai','IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Alexandria",Tahoma,Arial,sans-serif;line-height:1.9}
-a{color:inherit;text-decoration:none}
-.page{width:min(1080px,94%);margin:34px auto;background:var(--paper);box-shadow:0 18px 55px #172b4d12;border-radius:22px;overflow:hidden}
-.hero{background:linear-gradient(120deg,#172b4d,#294c75);color:#fff;padding:52px 7%;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;width:310px;height:310px;border:1px solid #ffffff22;border-radius:50%;left:-100px;top:-150px;box-shadow:0 0 0 35px #ffffff09,0 0 0 75px #ffffff07}
-.kicker{color:#e7d3a7;font-size:.82rem;font-weight:600;letter-spacing:.04em}
-h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.35;margin:10px 0 8px;font-weight:800}
-.role{color:#e5eaf1;font-size:1rem;margin:0}
-.contact{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:25px;color:#f2f5f9;font-size:.84rem}
-.contact a{border-bottom:1px solid #ffffff55}
-.content{padding:42px 7% 52px}
-section{margin-bottom:34px}
-.section-title{display:flex;align-items:center;gap:12px;margin:0 0 17px;color:var(--navy);font-size:1.15rem;font-weight:800}
-.section-title:before{content:"";width:5px;height:25px;background:var(--gold);border-radius:5px}
-.summary{font-size:.96rem;color:#46536a;margin:0;max-width:850px}
-.education{display:grid;gap:14px}
-.edu-item{padding:17px 20px;border:1px solid var(--line);border-radius:14px;background:#fcfdff}
-.edu-item h3{margin:0;color:var(--navy);font-size:1rem}
-.edu-item p{margin:4px 0 0;color:var(--muted);font-size:.88rem}
-.edu-label{display:inline-block;color:#856b36;background:#f7f1e4;border-radius:30px;padding:3px 10px;font-size:.72rem;margin-bottom:7px}
-.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
-.skill{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:12px 14px;border-radius:12px;background:#fff;font-size:.87rem}
-.skill:before{content:"";width:8px;height:8px;background:var(--gold);border-radius:50%;flex:none}
-.language{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
-.language:last-child{border-bottom:0}
-.footer{background:#f8f9fb;border-top:1px solid var(--line);padding:17px 7%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.76rem}
-.actions{width:min(1080px,94%);margin:0 auto 26px;display:flex;justify-content:flex-end;gap:10px}
-.btn{border:0;border-radius:999px;padding:11px 18px;background:var(--navy);color:white;font:inherit;font-size:.82rem;cursor:pointer}
-.btn.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}
-@media(max-width:620px){.page{margin:12px auto;border-radius:15px}.hero{padding:36px 7%}.content{padding:30px 7%}.skills{grid-template-columns:1fr}.contact{flex-direction:column;gap:7px}.footer{flex-direction:column}}
-@media print{body{background:#fff}.page{width:100%;margin:0;box-shadow:none;border-radius:0}.actions{display:none}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact}.edu-item,.skill{break-inside:avoid}}
+body{
+  margin:0;
+  background:var(--cream);
+  color:#263c38;
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{display:block}
+a{color:inherit}
+button{font-family:inherit}
+::selection{background:var(--gold);color:#fff}
+.container{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+.skip-link{
+  position:fixed;top:-100px;inset-inline-start:16px;z-index:300;
+  background:var(--gold);color:#20170a;padding:10px 18px;border-radius:10px;
+  font-weight:600;text-decoration:none;transition:top .25s ease;
+}
+.skip-link:focus{top:12px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ---------- شريط التقدم ---------- */
+.scroll-progress{
+  position:fixed;top:0;inset-inline-start:0;height:3px;width:0;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  z-index:220;transition:width .1s linear;
+}
+
+/* ---------- الترويسة ---------- */
+.site-header{
+  position:sticky;top:0;z-index:200;
+  background:rgba(9,36,34,.86);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(193,154,91,.18);
+  transition:box-shadow .3s ease,background .3s ease;
+}
+.site-header.scrolled{box-shadow:0 12px 30px -20px rgba(0,0,0,.6);background:rgba(8,31,29,.94)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#f7f2e7;flex-shrink:0}
+.brand-mark{
+  width:40px;height:40px;display:grid;place-items:center;
+  border:1px solid rgba(193,154,91,.55);border-radius:12px;
+  background:rgba(193,154,91,.08);color:var(--gold-light);
+}
+.brand-mark svg{width:22px;height:22px}
+.brand-text{display:flex;flex-direction:column;line-height:1.25}
+.brand-text strong{font-family:var(--font-display);font-size:1.02rem;font-weight:600;letter-spacing:.01em}
+.brand-text small{font-size:.66rem;color:rgba(247,242,231,.55);letter-spacing:.06em}
+.nav-links{display:flex;align-items:center;gap:2px;margin-inline-start:auto}
+.nav-links a{
+  position:relative;text-decoration:none;color:rgba(247,242,231,.72);
+  font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:999px;
+  transition:color .25s ease,background .25s ease;white-space:nowrap;
+}
+.nav-links a:hover{color:var(--gold-light);background:rgba(255,255,255,.05)}
+.nav-links a.active{color:var(--gold-light)}
+.nav-links a.active::after{
+  content:"";position:absolute;bottom:2px;inset-inline:14px;height:2px;
+  border-radius:2px;background:var(--gold);
+}
+.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-toggle{
+  display:none;width:42px;height:42px;border:1px solid rgba(193,154,91,.35);
+  border-radius:12px;background:rgba(255,255,255,.04);cursor:pointer;
+  padding:0;place-items:center;gap:4px;
+}
+.nav-toggle span{display:block;width:18px;height:2px;border-radius:2px;background:#f7f2e7;transition:transform .3s ease,opacity .3s ease}
+body.menu-open .nav-toggle span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+body.menu-open .nav-toggle span:nth-child(2){opacity:0}
+body.menu-open .nav-toggle span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- الأزرار ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 24px;border-radius:999px;border:1px solid transparent;
+  font-size:.92rem;font-weight:600;line-height:1;text-decoration:none;
+  cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease;
+}
+.btn svg{width:17px;height:17px;flex:0 0 auto}
+.btn-sm{padding:9px 18px;font-size:.82rem}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold));
+  color:#241a0b;box-shadow:0 14px 30px -16px rgba(193,154,91,.85);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 34px -14px rgba(193,154,91,.9)}
+.btn-ghost{
+  border-color:rgba(247,242,231,.3);color:#f7f2e7;
+  background:rgba(255,255,255,.04);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.09);border-color:rgba(227,198,144,.55);transform:translateY(-2px)}
+
+/* ---------- الواجهة الرئيسية ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#f7f2e7;
+  padding:clamp(64px,8vw,104px) 0 clamp(110px,13vw,160px);
+  background:
+    radial-gradient(1100px 560px at 88% -12%,rgba(193,154,91,.2),transparent 62%),
+    radial-gradient(900px 520px at 6% 112%,rgba(23,96,88,.55),transparent 66%),
+    linear-gradient(158deg,#0b2b29 0%,#0e3a36 46%,#07211f 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.6;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23c9a86a' stroke-opacity='.12'%3E%3Cpath d='M70 15 82 58 125 70 82 82 70 125 58 82 15 70 58 58Z'/%3E%3Ccircle cx='70' cy='70' r='26'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:140px 140px;
+  -webkit-mask-image:radial-gradient(ellipse at 72% 18%,#000 0%,transparent 68%);
+  mask-image:radial-gradient(ellipse at 72% 18%,#000 0%,transparent 68%);
+}
+.hero-orbit{
+  position:absolute;inset-inline-start:-190px;bottom:-240px;
+  width:540px;height:540px;border:1px dashed rgba(193,154,91,.22);
+  border-radius:50%;pointer-events:none;
+}
+.hero-orbit::after{content:"";position:absolute;inset:62px;border:1px solid rgba(193,154,91,.12);border-radius:50%}
+.hero-grid{
+  position:relative;z-index:2;display:grid;
+  grid-template-columns:1.12fr .88fr;gap:clamp(32px,6vw,72px);align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  color:var(--gold-light);font-size:.88rem;font-weight:500;letter-spacing:.02em;
+}
+.eyebrow::before{
+  content:"";width:38px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-light));
+}
+.hero h1{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.5rem,5.2vw,4.1rem);line-height:1.22;
+  margin:16px 0 14px;color:#fdfaf2;letter-spacing:-.01em;
+}
+.hero h1 span{color:var(--gold-light)}
+.hero-role{font-size:clamp(1rem,1.6vw,1.14rem);color:#d3e3dd;margin:0 0 12px;font-weight:400}
+.hero-meta{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  color:rgba(247,242,231,.62);font-size:.86rem;margin:0;
+}
+.hero-meta svg{width:15px;height:15px;color:var(--gold)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* ---------- بطاقة التعريف ---------- */
+.id-card{
+  position:relative;padding:34px 30px 28px;border-radius:26px;
+  background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid rgba(193,154,91,.34);
+  box-shadow:0 34px 80px -34px rgba(0,0,0,.75);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  max-width:390px;width:100%;justify-self:end;
+}
+.id-card::before{
+  content:"";position:absolute;top:0;inset-inline:32px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold-light),transparent);
+}
+.id-avatar{
+  width:92px;height:92px;margin:0 auto 16px;border-radius:50%;
+  display:grid;place-items:center;position:relative;
+  background:radial-gradient(circle at 30% 25%,rgba(227,198,144,.24),rgba(15,76,70,.35));
+  border:1px solid rgba(227,198,144,.55);
+  box-shadow:inset 0 0 0 6px rgba(193,154,91,.08);
+  font-family:var(--font-display);font-size:2.6rem;color:var(--gold-light);line-height:1;
+}
+.id-avatar::after{
+  content:"";position:absolute;bottom:-2px;inset-inline-end:-2px;
+  width:10px;height:10px;border-radius:2px;
+  background:var(--gold);transform:rotate(45deg);
+  border:2px solid #0d3330;
+}
+.id-name{font-family:var(--font-display);font-size:1.28rem;font-weight:600;text-align:center;margin:0;color:#fdfaf2}
+.id-role{text-align:center;color:rgba(247,242,231,.62);font-size:.8rem;margin:4px 0 14px}
+.id-badge{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  font-size:.72rem;font-weight:500;color:#ecd6ab;text-align:center;
+  background:rgba(193,154,91,.12);border:1px solid rgba(193,154,91,.3);
+  border-radius:999px;padding:7px 12px;margin:0 auto 20px;line-height:1.5;
+}
+.id-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);box-shadow:0 0 0 3px rgba(227,198,144,.15);flex:0 0 auto}
+.id-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.id-list li{
+  display:flex;align-items:center;gap:12px;padding:12px 0;
+  border-top:1px solid rgba(255,255,255,.09);
+}
+.id-list svg{width:18px;height:18px;color:var(--gold);flex:0 0 auto}
+.id-list div{display:flex;flex-direction:column;line-height:1.45;min-width:0}
+.id-list span{font-size:.66rem;color:rgba(247,242,231,.62);letter-spacing:.03em}
+.id-list strong,.id-list a{
+  font-size:.83rem;font-weight:500;color:#f2ede2;text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.id-list a:hover{color:var(--gold-light)}
+/* ---------- بطاقة الملخص ---------- */
+.about-wrap{position:relative;z-index:3;margin-top:clamp(-88px,-7vw,-58px)}
+.about-card{
+  background:var(--paper);border-radius:28px;
+  padding:clamp(26px,4.4vw,50px);
+  border:1px solid rgba(15,59,54,.07);
+  box-shadow:0 34px 80px -48px rgba(11,43,41,.45);
+  position:relative;overflow:hidden;
+}
+.about-card::after{
+  content:"";position:absolute;top:-90px;inset-inline-start:-90px;
+  width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(193,154,91,.14),transparent 70%);
+  pointer-events:none;
+}
+.about-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.about-head .sec-title{margin:0}
+.about-note{
+  font-size:.74rem;color:var(--gold-deep);letter-spacing:.08em;
+  border:1px solid rgba(193,154,91,.35);border-radius:999px;
+  padding:5px 14px;background:rgba(193,154,91,.07);white-space:nowrap;
+}
+.summary-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.summary-item{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:15px 18px;border-radius:15px;
+  background:linear-gradient(270deg,rgba(15,76,70,.045),rgba(15,76,70,0));
+  border-inline-start:2px solid rgba(193,154,91,.55);
+}
+.summary-item .num{
+  flex:0 0 auto;width:28px;height:28px;margin-top:1px;
+  display:grid;place-items:center;border-radius:50%;
+  border:1px solid rgba(193,154,91,.45);
+  font-family:var(--font-display);font-size:.76rem;color:var(--gold-deep);
+  background:rgba(193,154,91,.06);
+}
+.summary-item p{margin:0;font-size:clamp(.95rem,1.2vw,1.04rem);line-height:1.9;color:#314843}
+
+/* ---------- الأقسام ---------- */
+.section{padding:clamp(54px,7.5vw,86px) 0;position:relative}
+section[id]{scroll-margin-top:92px}
+.section-head{margin-bottom:clamp(26px,4vw,38px);max-width:760px}
+.sec-label{
+  display:flex;align-items:center;gap:12px;
+  color:var(--gold-deep);font-size:.76rem;font-weight:600;
+  letter-spacing:.1em;margin-bottom:8px;
+}
+.sec-label::after{content:"";height:1px;flex:1;background:linear-gradient(270deg,rgba(193,154,91,.4),transparent)}
+.sec-title{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(1.65rem,3vw,2.25rem);line-height:1.35;
+  color:var(--ink-2);margin:0;
+}
+.sec-desc{margin:8px 0 0;color:var(--muted);font-size:.92rem;line-height:1.8}
+.sec-label.light{color:var(--gold-light)}
+.sec-label.light::after{background:linear-gradient(270deg,rgba(227,198,144,.35),transparent)}
+
+/* ---------- المؤهل العلمي ---------- */
+.timeline{
+  position:relative;display:grid;gap:20px;
+  padding-inline-start:30px;margin-inline-start:8px;
+  border-inline-start:1px solid rgba(15,59,54,.16);
+}
+.tl-item{position:relative}
+.tl-item::before{
+  content:"";position:absolute;top:30px;inset-inline-start:-37px;
+  width:13px;height:13px;border-radius:50%;
+  background:var(--cream);border:2px solid var(--gold);
+}
+.tl-item.current::before{background:var(--gold);box-shadow:0 0 0 6px rgba(193,154,91,.16)}
+.edu-card{
+  display:flex;align-items:flex-start;gap:20px;
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);padding:26px 28px;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.edu-card:hover{transform:translateY(-3px);border-color:rgba(193,154,91,.5);box-shadow:var(--shadow)}
+.edu-icon{
+  flex:0 0 auto;width:54px;height:54px;border-radius:16px;
+  display:grid;place-items:center;
+  background:rgba(15,76,70,.07);color:var(--teal);
+  border:1px solid rgba(15,76,70,.08);
+}
+.edu-icon svg{width:26px;height:26px}
+.current .edu-icon{background:linear-gradient(140deg,#12554e,#0a302c);color:var(--gold-light);border-color:rgba(193,154,91,.3)}
+.edu-body{min-width:0;flex:1}
+.edu-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.edu-top h3{font-size:1.1rem;font-weight:600;color:var(--ink-2);margin:0;line-height:1.5}
+.edu-badge{
+  font-size:.68rem;font-weight:500;padding:4px 11px;border-radius:999px;
+  color:var(--gold-deep);background:rgba(193,154,91,.13);
+  border:1px solid rgba(193,154,91,.32);white-space:nowrap;
+}
+.edu-sub{margin:0;color:#3f5a55;font-size:.94rem;font-weight:500;line-height:1.7}
+.edu-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:10px;color:#5f716c;font-size:.82rem}
+.edu-meta span{display:inline-flex;align-items:center;gap:6px}
+.edu-meta svg{width:14px;height:14px;color:var(--gold)}
+
+/* ---------- المهارات ---------- */
+.skills-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.skill-card{
+  grid-column:span 2;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;gap:12px;
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:20px;padding:24px;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.skill-card:nth-child(4),.skill-card:nth-child(5){grid-column:span 3}
+.skill-card::after{
+  content:"";position:absolute;inset-inline-end:-50px;bottom:-50px;
+  width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle,rgba(193,154,91,.16),transparent 70%);
+  opacity:0;transition:opacity .35s ease;pointer-events:none;
+}
+.skill-card:hover{transform:translateY(-4px);border-color:rgba(193,154,91,.48);box-shadow:var(--shadow)}
+.skill-card:hover::after{opacity:1}
+.skill-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.skill-icon{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  color:var(--teal);
+  background:linear-gradient(140deg,rgba(15,76,70,.09),rgba(193,154,91,.13));
+  border:1px solid rgba(15,76,70,.07);
+}
+.skill-icon svg{width:23px;height:23px}
+.skill-index{font-family:var(--font-display);font-size:.78rem;color:rgba(15,59,54,.32);letter-spacing:.05em}
+.skill-card h3{font-size:1.03rem;font-weight:600;color:var(--ink-2);margin:0;line-height:1.55}
+.skill-card p{margin:0;font-size:.86rem;line-height:1.85;color:var(--muted)}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.skill-tags span{
+  font-size:.66rem;padding:3px 9px;border-radius:999px;
+  background:rgba(15,76,70,.06);color:#4c625e;
+  border:1px solid rgba(15,76,70,.08);letter-spacing:.02em;
+}
+.extra-skills{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  margin-top:18px;padding-top:16px;
+  border-top:1px dashed rgba(15,59,54,.14);
+}
+.extra-label{font-size:.76rem;font-weight:600;color:var(--gold-deep);margin-inline-end:4px}
+.extra-skills .chip{font-size:.78rem;padding:6px 14px}
+/* ---------- الدورات ---------- */
+.courses-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.course{
+  display:flex;align-items:center;gap:15px;
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:15px;padding:17px 20px;
+  transition:transform .28s ease,border-color .28s ease,background .28s ease;
+}
+.course:hover{transform:translateX(-4px);border-color:rgba(193,154,91,.5);background:#fffefb}
+.course-num{
+  flex:0 0 auto;width:34px;height:34px;border-radius:11px;
+  display:grid;place-items:center;
+  font-family:var(--font-display);font-size:.78rem;color:var(--gold-deep);
+  background:rgba(193,154,91,.1);border:1px solid rgba(193,154,91,.2);
+}
+.course h3{font-size:.92rem;font-weight:500;color:#2c4742;margin:0;line-height:1.65}
+.course svg{width:16px;height:16px;color:rgba(193,154,91,.65);margin-inline-start:auto;flex:0 0 auto}
+
+/* ---------- اللغات والاهتمامات ---------- */
+.duo{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}
+.info-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius);padding:clamp(22px,3vw,30px);
+  display:flex;flex-direction:column;
+}
+.card-title{
+  font-family:var(--font-display);font-size:1.12rem;font-weight:600;
+  color:var(--ink-2);margin:0 0 6px;display:flex;align-items:center;gap:10px;
+}
+.card-title svg{width:19px;height:19px;color:var(--gold)}
+.card-sub{margin:0 0 6px;font-size:.84rem;color:var(--muted);line-height:1.8}
+.lang-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:15px 0;border-bottom:1px dashed rgba(15,59,54,.14);
+}
+.lang-row:last-child{border-bottom:0;padding-bottom:0}
+.lang-name{display:flex;align-items:center;gap:10px;font-weight:500;color:#274742;font-size:.95rem}
+.lang-name .flag{
+  width:7px;height:7px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 4px rgba(193,154,91,.12);
+}
+.lang-badge{
+  font-size:.72rem;padding:4px 13px;border-radius:999px;
+  background:rgba(15,76,70,.07);color:#3f5a55;
+  border:1px solid rgba(15,76,70,.1);white-space:nowrap;
+}
+.lang-badge.gold{background:rgba(193,154,91,.13);color:var(--gold-deep);border-color:rgba(193,154,91,.3)}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chip{
+  font-size:.82rem;padding:8px 16px;border-radius:999px;
+  background:rgba(15,76,70,.05);border:1px solid rgba(15,76,70,.1);
+  color:#37524d;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease;
+}
+.chip:hover{background:var(--teal);color:#f6f1e6;border-color:var(--teal);transform:translateY(-2px)}
+
+/* ---------- التواصل ---------- */
+.contact{
+  position:relative;overflow:hidden;color:#f6f1e6;
+  border-radius:28px;padding:clamp(30px,5vw,54px);
+  display:grid;grid-template-columns:1.08fr .92fr;
+  gap:clamp(26px,4vw,44px);align-items:center;
+  background:
+    radial-gradient(700px 320px at 92% 0%,rgba(193,154,91,.18),transparent 65%),
+    linear-gradient(140deg,#0c3532,#082422);
+  box-shadow:0 40px 80px -50px rgba(8,36,34,.8);
+}
+.contact::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23c9a86a' stroke-opacity='.1'%3E%3Cpath d='M60 12 70 50 108 60 70 70 60 108 50 70 12 60 50 50Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:120px 120px;
+  -webkit-mask-image:linear-gradient(250deg,#000,transparent 75%);
+  mask-image:linear-gradient(250deg,#000,transparent 75%);
+}
+.contact-text,.contact-details{position:relative;z-index:1}
+.contact h2{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(1.8rem,3.4vw,2.5rem);margin:6px 0 10px;color:#fdfaf2;
+}
+.contact p{margin:0;color:#c6dad3;font-size:.93rem;line-height:1.9;max-width:46ch}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.contact-details{display:grid;gap:10px}
+.contact-item{
+  display:flex;align-items:center;gap:12px;
+  padding:13px 16px;border-radius:14px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.11);
+  font-size:.85rem;color:#e9f1ed;
+  transition:background .25s ease,border-color .25s ease;
+}
+.contact-item:hover{background:rgba(255,255,255,.08);border-color:rgba(193,154,91,.4)}
+.contact-item svg{width:18px;height:18px;color:var(--gold-light);flex:0 0 auto}
+.contact-item a{text-decoration:none;overflow-wrap:anywhere}
+.contact-item a:hover{color:var(--gold-light)}
+
+/* ---------- التذييل ---------- */
+.footer{padding:30px 0 38px;border-top:1px solid rgba(15,59,54,.1);margin-top:clamp(40px,6vw,64px)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#5c6f6a;font-size:.78rem}
+.footer-brand{display:flex;align-items:center;gap:9px;color:#3c5651;font-weight:500}
+.footer-brand svg{width:16px;height:16px;color:var(--gold)}
+.footer-inner p{margin:0}
+
+/* ---------- زر العودة والتنبيه ---------- */
+.to-top{
+  position:fixed;bottom:24px;inset-inline-start:24px;z-index:150;
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;cursor:pointer;
+  background:var(--paper);color:var(--teal);
+  border:1px solid rgba(193,154,91,.45);
+  box-shadow:0 12px 28px -14px rgba(11,43,41,.4);
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .3s ease,visibility .3s ease,transform .3s ease,background .25s ease,color .25s ease;
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--teal);color:var(--gold-light)}
+.to-top svg{width:19px;height:19px}
+.toast{
+  position:fixed;bottom:26px;left:50%;z-index:260;
+  transform:translate(-50%,18px);opacity:0;pointer-events:none;
+  background:#0e3a36;color:#f7f2e7;border:1px solid rgba(193,154,91,.5);
+  border-radius:999px;padding:11px 22px;font-size:.82rem;
+  box-shadow:0 18px 40px -18px rgba(0,0,0,.55);
+  transition:opacity .3s ease,transform .3s ease;white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- الحركة عند التمرير ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.visible{opacity:1;transform:none}
+.js .tl-item:nth-child(2).reveal{transition-delay:.08s}
+.js .skill-card:nth-child(2){transition-delay:.06s}
+.js .skill-card:nth-child(3){transition-delay:.12s}
+.js .skill-card:nth-child(4){transition-delay:.18s}
+.js .skill-card:nth-child(5){transition-delay:.24s}
+.js .course:nth-child(even){transition-delay:.06s}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+/* ---------- الاستجابة ---------- */
+@media (max-width:1080px){
+  .nav-links a{padding:8px 9px;font-size:.8rem}
+  .nav-cta{display:none}
+}
+@media (max-width:940px){
+  .nav-toggle{display:grid}
+  .nav-links{
+    position:absolute;top:70px;inset-inline:16px;
+    flex-direction:column;align-items:stretch;gap:2px;
+    background:rgba(9,36,34,.98);
+    border:1px solid rgba(193,154,91,.25);
+    border-radius:18px;padding:12px;
+    box-shadow:0 24px 50px -24px rgba(0,0,0,.7);
+    opacity:0;visibility:hidden;transform:translateY(-8px);
+    transition:opacity .25s ease,transform .25s ease,visibility .25s ease;
+  }
+  body.menu-open .nav-links{opacity:1;visibility:visible;transform:none}
+  .nav-links a{padding:11px 14px;font-size:.9rem;border-radius:10px}
+  .nav-links a.active{background:rgba(193,154,91,.1)}
+  .nav-links a.active::after{display:none}
+}
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr;text-align:center;gap:42px}
+  .eyebrow{justify-content:center}
+  .eyebrow::before{display:none}
+  .hero-actions{justify-content:center}
+  .hero-meta{justify-content:center}
+  .id-card{justify-self:center;max-width:440px}
+  .hero{padding-bottom:clamp(96px,14vw,130px)}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .skill-card,.skill-card:nth-child(4),.skill-card:nth-child(5){grid-column:span 1}
+  .skill-card:nth-child(5){grid-column:span 2}
+  .duo{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .contact p{max-width:none}
+  .about-head{align-items:flex-start}
+}
+@media (max-width:700px){
+  .container{width:calc(100% - 32px)}
+  .courses-grid{grid-template-columns:1fr}
+  .about-wrap{margin-top:-42px}
+  .about-card{border-radius:22px}
+  .summary-item{padding:13px 14px;gap:12px}
+  .timeline{padding-inline-start:22px;margin-inline-start:4px}
+  .tl-item::before{inset-inline-start:-29px}
+  .edu-card{padding:22px 20px;gap:16px}
+  .edu-icon{width:46px;height:46px;border-radius:13px}
+  .edu-icon svg{width:22px;height:22px}
+  .edu-top h3{font-size:1.02rem}
+  .edu-sub{font-size:.88rem}
+  .footer-inner{justify-content:center;text-align:center}
+}
+@media (max-width:600px){
+  .brand-text small{display:none}
+  .brand-mark{width:36px;height:36px}
+  .nav{height:64px}
+  .nav-links{top:64px}
+  .hero{padding-top:48px}
+  .hero h1{font-size:clamp(2.2rem,10vw,3rem)}
+  .hero-actions .btn{flex:1 1 auto}
+  .id-card{padding:28px 22px 24px}
+  .skills-grid{grid-template-columns:1fr}
+  .skill-card:nth-child(5){grid-column:span 1}
+  .about-note{display:none}
+  .summary-item p{font-size:.94rem}
+  .course{padding:15px 16px}
+  .course h3{font-size:.86rem}
+  .contact-item{font-size:.8rem;padding:12px 14px}
+  .to-top{width:40px;height:40px;bottom:18px;inset-inline-start:18px}
+  .toast{font-size:.76rem;padding:10px 16px;max-width:calc(100% - 32px);white-space:normal;text-align:center}
+}
+@media (max-width:400px){
+  .hero-actions{flex-direction:column}
+  .hero-actions .btn{width:100%}
+  .summary-item .num{display:none}
+}
+
+/* ---------- الطباعة / حفظ PDF ---------- */
+@media print{
+  @page{size:A4;margin:12mm}
+  html,body{background:#fff!important;color:#111!important;font-size:10.5pt}
+  .site-header,.scroll-progress,.hero-actions,.to-top,.toast,.nav-toggle,.skip-link{display:none!important}
+  .container{width:100%!important}
+  .hero{
+    background:#fff!important;color:#111!important;
+    padding:0 0 14px!important;border-bottom:2px solid var(--gold);
+  }
+  .hero::before,.hero-orbit{display:none!important}
+  .hero-grid{grid-template-columns:1.15fr .85fr!important;gap:24px!important;text-align:start!important}
+  .eyebrow{color:var(--gold-deep)!important;justify-content:flex-start!important}
+  .eyebrow::before{display:block!important}
+  .hero h1{color:#0b2b29!important;font-size:26pt!important;margin:8px 0 6px!important}
+  .hero h1 span{color:var(--gold-deep)!important}
+  .hero-role{color:#333!important;font-size:11pt!important}
+  .hero-meta{color:#555!important;justify-content:flex-start!important}
+  .id-card{
+    background:#fbf8f1!important;color:#111!important;
+    border:1px solid #dcc9a2!important;box-shadow:none!important;
+    padding:16px!important;max-width:none!important;
+  }
+  .id-card::before{display:none}
+  .id-avatar{width:56px;height:56px;font-size:22pt;color:var(--gold-deep)!important;border-color:#dcc9a2!important}
+  .id-avatar::after{display:none}
+  .id-name{color:#111!important;font-size:13pt!important}
+  .id-role{color:#555!important;margin-bottom:6px!important}
+  .id-badge{color:#6f5325!important;background:#f4ead7!important;border-color:#dcc9a2!important;margin-bottom:8px!important;padding:4px 8px!important}
+  .id-list li{padding:5px 0!important;border-color:#e6ddc9!important}
+  .id-list span{color:#777!important}
+  .id-list strong,.id-list a{color:#222!important;font-size:8.5pt!important}
+  .id-list svg{width:13px!important;height:13px!important;color:var(--gold-deep)!important}
+  .about-wrap{margin-top:14px!important}
+  .about-card{padding:14px 16px!important;border:1px solid #e3dac6!important;box-shadow:none!important;border-radius:12px!important}
+  .about-card::after{display:none}
+  .about-note{display:none!important}
+  .summary-item{padding:7px 10px!important;background:#fcfaf5!important;border-inline-start:2px solid var(--gold)!important;break-inside:avoid}
+  .summary-item .num{width:20px;height:20px;font-size:7pt}
+  .summary-item p{font-size:9.5pt!important;line-height:1.7!important}
+  .section{padding:12px 0!important}
+  #skills{break-before:page;page-break-before:always}
+  .section-head{margin-bottom:8px!important;break-after:avoid;page-break-after:avoid}
+  .sec-title{font-size:15pt!important;color:#0b2b29!important}
+  .sec-label{font-size:7.5pt!important;color:var(--gold-deep)!important;margin-bottom:2px!important}
+  .sec-desc{font-size:8.5pt!important}
+  .timeline{gap:8px!important;padding-inline-start:18px!important;margin-inline-start:2px!important}
+  .tl-item::before{top:16px!important;inset-inline-start:-24px!important;width:9px!important;height:9px!important}
+  .edu-card{padding:10px 12px!important;gap:12px!important;box-shadow:none!important;border:1px solid #e3dac6!important;break-inside:avoid}
+  .edu-icon{width:34px!important;height:34px!important;border-radius:9px!important}
+  .edu-icon svg{width:18px!important;height:18px!important}
+  .edu-top h3{font-size:11pt!important}
+  .edu-badge{font-size:7pt!important;padding:2px 8px!important}
+  .edu-sub{font-size:8.5pt!important}
+  .edu-meta{font-size:7.5pt!important;margin-top:4px!important}
+  .skills-grid{grid-template-columns:repeat(2,1fr)!important;gap:6px!important;break-before:avoid;page-break-before:avoid}
+  .skill-card,.skill-card:nth-child(4),.skill-card:nth-child(5){grid-column:auto!important;padding:10px 12px!important;gap:6px!important;box-shadow:none!important;border:1px solid #e3dac6!important;break-inside:avoid}
+  .skill-card:nth-child(5){grid-column:1 / -1!important}
+  .skill-icon{width:28px!important;height:28px!important;border-radius:8px!important}
+  .skill-icon svg{width:16px!important;height:16px!important}
+  .skill-card h3{font-size:9.5pt!important}
+  .skill-card p{font-size:7.5pt!important;line-height:1.6!important}
+  .skill-tags{display:none!important}
+  .extra-skills{display:none!important}
+  .courses-grid{grid-template-columns:1fr 1fr!important;gap:6px!important}
+  .course{padding:8px 10px!important;break-inside:avoid;border:1px solid #e3dac6!important}
+  .course h3{font-size:8pt!important;line-height:1.5!important}
+  .course-num{width:22px!important;height:22px!important;font-size:7pt!important;border-radius:6px!important}
+  .course svg{display:none!important}
+  .duo{grid-template-columns:1fr 1.35fr!important;gap:7px!important}
+  .info-card{padding:10px 12px!important;box-shadow:none!important;border:1px solid #e3dac6!important;break-inside:avoid}
+  .card-title{font-size:10pt!important}
+  .card-sub{display:none!important}
+  .lang-row{padding:5px 0!important}
+  .lang-name{font-size:8.5pt!important}
+  .lang-badge{font-size:7pt!important;padding:2px 8px!important}
+  .chips{gap:4px!important;margin-top:6px!important}
+  .chip{font-size:7pt!important;padding:3px 8px!important;background:#faf7f1!important;border-color:#e3dac6!important;color:#333!important}
+  .contact{
+    background:#fbf8f1!important;color:#111!important;
+    border:1px solid #dcc9a2!important;box-shadow:none!important;
+    padding:14px 16px!important;gap:16px!important;
+    grid-template-columns:1.1fr .9fr!important;
+    border-radius:12px!important;break-inside:avoid;
+  }
+  .contact::before{display:none}
+  .contact h2{color:#0b2b29!important;font-size:15pt!important;margin:2px 0 4px!important}
+  .contact p{color:#444!important;font-size:8pt!important;line-height:1.6!important}
+  .contact-actions{display:none!important}
+  .contact-item{padding:6px 9px!important;background:#fff!important;border:1px solid #e3dac6!important;color:#222!important;font-size:7.5pt!important}
+  .contact-item svg{color:var(--gold-deep)!important;width:12px!important;height:12px!important}
+  .footer{margin-top:12px!important;padding:8px 0!important;border-color:#e3dac6!important;display:none!important}
+  .footer-inner{font-size:7pt!important;color:#666!important;justify-content:space-between!important;text-align:start!important}
+  .js .reveal{opacity:1!important;transform:none!important}
+}
 </style>
 </head>
 <body>
-<div class="actions">
-  <button class="btn secondary" onclick="window.print()">طباعة / حفظ PDF</button>
-  <a class="btn" href="mailto:mawadah.0033@gmail.com">تواصل عبر البريد</a>
-</div>
-<main class="page">
-  <header class="hero">
-    <div class="kicker">السيرة الذاتية الرقمية</div>
-    <h1>مودة سمير كاشقري</h1>
-    <p class="role">خريجة علم المعلومات | طالبة ماجستير الذكاء الاصطناعي</p>
-    <div class="contact">
-      <span>البريد الإلكتروني: <a href="mailto:mawadah.0033@gmail.com">mawadah.0033@gmail.com</a></span>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="مودة سمير كاشقري — الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 1.8 14.3 9.7 22.2 12l-7.9 2.3L12 22.2 9.7 14.3 1.8 12l7.9-2.3Z"/></svg>
+      </span>
+      <span class="brand-text"><strong>مودة كاشقري</strong><small>سيرة ذاتية رقمية</small></span>
+    </a>
+
+    <nav class="nav-links" id="navMenu" aria-label="التنقل الرئيسي">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#about">نبذة</a>
+      <a href="#education">المؤهل</a>
+      <a href="#skills">المهارات</a>
+      <a href="#courses">الدورات</a>
+      <a href="#languages">اللغات</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-gold btn-sm nav-cta" href="mawadah-cv.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        تحميل PDF
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="فتح قائمة التنقل">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
-  <div class="content">
-    <section>
-      <h2 class="section-title">الملخص المهني</h2>
-      <p class="summary">خريجة علم المعلومات، أمتلك اهتمامًا بتنظيم المعرفة وإدارة المعلومات وتطوير أساليب الوصول إليها.<br>
-      أدرس حاليًا ماجستير الذكاء الاصطناعي، وأسعى إلى توظيف معارفي الأكاديمية في المجالات الرقمية والتقنية.<br>
-      أحرص على تطوير مهاراتي باستمرار، والاستعداد للمساهمة بفاعلية في بيئة العمل وتحقيق أهدافها.</p>
-    </section>
-
-    <section>
-      <h2 class="section-title">المؤهلات العلمية</h2>
-      <div class="education">
-        <article class="edu-item">
-          <span class="edu-label">الدراسة الحالية</span>
-          <h3>ماجستير الذكاء الاصطناعي</h3>
-          <p>الجامعة الإسلامية بمينيسوتا – الولايات المتحدة الأمريكية</p>
-        </article>
-        <article class="edu-item">
-          <span class="edu-label">مؤهل حاصل عليه</span>
-          <h3>بكالوريوس علم المعلومات</h3>
-          <p>جامعة طيبة</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">المهارات الأساسية</h2>
-      <div class="skills">
-        <div class="skill">الأرشفة الرقمية</div>
-        <div class="skill">إدارة وتنظيم المعلومات</div>
-        <div class="skill">الفهرسة وتصنيف الوثائق</div>
-        <div class="skill">استخدام برامج Microsoft Office</div>
-        <div class="skill">تحليل البيانات ومهارات الذكاء الاصطناعي</div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">اللغات</h2>
-      <div class="language"><span>اللغة العربية</span><strong>ممتازة</strong></div>
-      <div class="language"><span>اللغة الإنجليزية</span><strong>مستوى يحتاج إلى تطوير</strong></div>
-    </section>
   </div>
-  <footer class="footer">
-    <span>مودة سمير كاشقري</span>
-    <span>mawadah.0033@gmail.com</span>
-  </footer>
+</header>
+
+<main id="main">
+
+  <!-- ===== الواجهة ===== -->
+  <section class="hero" id="home">
+    <div class="hero-orbit" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">أخصائية معلومات · أرشفة وإدارة الوثائق</span>
+        <h1>مودة سمير<br><span>كاشقري</span></h1>
+        <p class="hero-role">أرشفة رقمية · تنظيم المعلومات · الفهرسة وتصنيف الوثائق</p>
+        <p class="hero-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          المدينة المنورة، المملكة العربية السعودية
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="mawadah-cv.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            تحميل السيرة PDF
+          </a>
+          <a class="btn btn-ghost" href="mailto:mawadah.0033@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            تواصل معي
+          </a>
+        </div>
+      </div>
+
+      <aside class="id-card reveal" aria-label="بطاقة التعريف">
+        <div class="id-avatar" aria-hidden="true">م</div>
+        <h2 class="id-name">مودة سمير كاشقري</h2>
+        <p class="id-role">أخصائية معلومات | أرشفة وإدارة الوثائق والسجلات</p>
+        <div class="id-badge"><span class="dot"></span> ماجستير الذكاء الاصطناعي · قيد الدراسة</div>
+        <ul class="id-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><span>الموقع</span><strong>المدينة المنورة، السعودية</strong></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><span>البريد الإلكتروني</span><a href="mailto:mawadah.0033@gmail.com">mawadah.0033@gmail.com</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <div><span>الجوال</span><a href="tel:+966557550227" dir="ltr">+966 55 755 0227</a></div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== الملخص المهني ===== -->
+  <section class="about-wrap" id="about">
+    <div class="container">
+      <div class="about-card reveal">
+        <div class="about-head">
+          <div>
+            <span class="sec-label">01 — الملف المهني</span>
+            <h2 class="sec-title">نبذة مهنية</h2>
+          </div>
+          <span class="about-note">ملخص في ثلاثة أسطر</span>
+        </div>
+        <ul class="summary-list">
+          <li class="summary-item">
+            <span class="num" aria-hidden="true">١</span>
+            <p>خريجة بكالوريوس علم المعلومات من جامعة طيبة، وأتابع حاليًا ماجستير الذكاء الاصطناعي في الجامعة الإسلامية بمينيسوتا الأمريكية.</p>
+          </li>
+          <li class="summary-item">
+            <span class="num" aria-hidden="true">٢</span>
+            <p>أمتلك خلفية متينة في الأرشفة الرقمية وتنظيم المعلومات والفهرسة وتصنيف الوثائق، مع إجادة استخدام برامج Microsoft Office.</p>
+          </li>
+          <li class="summary-item">
+            <span class="num" aria-hidden="true">٣</span>
+            <p>أطوّر مهاراتي باستمرار في تحليل البيانات والذكاء الاصطناعي، وأتطلع إلى فرصة مهنية تُوظّف فيها معرفتي وتستثمر طاقتي في سوق العمل.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== المؤهل العلمي ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="sec-label">02 — التعليم</span>
+        <h2 class="sec-title">المؤهل العلمي</h2>
+        <p class="sec-desc">مسار أكاديمي يجمع بين أساس علم المعلومات ودراسات الذكاء الاصطناعي.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item current reveal">
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m22 9-10-5L2 9l10 5 10-5Z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 9v5"/></svg>
+            </div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <h3>ماجستير الذكاء الاصطناعي</h3>
+                <span class="edu-badge">قيد الدراسة</span>
+              </div>
+              <p class="edu-sub">الجامعة الإسلامية بمينيسوتا</p>
+              <div class="edu-meta">
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                  الولايات المتحدة الأمريكية
+                </span>
+                <span>الدراسة الحالية</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tl-item reveal">
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m22 9-10-5L2 9l10 5 10-5Z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 9v5"/></svg>
+            </div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <h3>بكالوريوس علم المعلومات</h3>
+              </div>
+              <p class="edu-sub">كلية المعلومات ومصادر التعلم — جامعة طيبة</p>
+              <div class="edu-meta">
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                  المدينة المنورة
+                </span>
+                <span>1447 هـ / 2026 م</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== المهارات ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="sec-label">03 — القدرات</span>
+        <h2 class="sec-title">المهارات الأساسية</h2>
+        <p class="sec-desc">خمس قدرات تمثل جوهر ملفي المهني في إدارة المعلومات والأرشفة.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/><path d="M10 12h4"/></svg>
+            </span>
+            <span class="skill-index">01</span>
+          </div>
+          <h3>الأرشفة الرقمية</h3>
+          <p>تنظيم الوثائق وحفظها إلكترونيًا بما يضمن سرعة الوصول إليها.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></svg>
+            </span>
+            <span class="skill-index">02</span>
+          </div>
+          <h3>إدارة وتنظيم المعلومات</h3>
+          <p>ترتيب مصادر المعلومات وتصنيفها لدعم كفاءة العمل المؤسسي.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 12 22l-9-9V4h9l8.6 8.6a1.4 1.4 0 0 1 0 2Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
+            </span>
+            <span class="skill-index">03</span>
+          </div>
+          <h3>الفهرسة وتصنيف الوثائق</h3>
+          <p>تطبيق قواعد الوصف والفهرسة في تنظيم الوثائق والسجلات.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+            </span>
+            <span class="skill-index">04</span>
+          </div>
+          <h3>استخدام برامج Microsoft Office</h3>
+          <p>إعداد المستندات والجداول والعروض التقديمية بكفاءة.</p>
+          <div class="skill-tags"><span>Word</span><span>Excel</span><span>PowerPoint</span></div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            </span>
+            <span class="skill-index">05</span>
+          </div>
+          <h3>تحليل البيانات ومهارات الذكاء الاصطناعي</h3>
+          <p>توظيف أدوات التحليل والذكاء الاصطناعي في إدارة المعلومات.</p>
+        </article>
+      </div>
+
+      <div class="extra-skills reveal">
+        <span class="extra-label">مهارات إضافية</span>
+        <span class="chip">العمل المكتبي والتنظيم الإداري</span>
+        <span class="chip">الدقة والانتباه للتفاصيل</span>
+        <span class="chip">سرعة التعلم والعمل ضمن فريق</span>
+      </div>
+    </div>
+  </section>
+  <!-- ===== الدورات التدريبية ===== -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="sec-label">04 — التطوير المهني</span>
+        <h2 class="sec-title">الدورات التدريبية</h2>
+        <p class="sec-desc">برامج تدريبية عزّزت جاهزيتي للعمل المكتبي وإدارة المعلومات.</p>
+      </div>
+
+      <div class="courses-grid">
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">01</span>
+          <h3>الفهرسة الآلية للكتب باستخدام قواعد وصف المصادر وإدخالها (RDA)</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">02</span>
+          <h3>التميز في خدمة العملاء</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">03</span>
+          <h3>السكرتارية التنفيذية وإدارة المكاتب</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">04</span>
+          <h3>الأمن السيبراني</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">05</span>
+          <h3>مهارات استخدام الحاسب الآلي في الأعمال المكتبية</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+        <article class="course reveal">
+          <span class="course-num" aria-hidden="true">06</span>
+          <h3>برنامج الانتمائي — المستويات الثاني والثالث والرابع</h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== اللغات والاهتمامات ===== -->
+  <section class="section" id="languages">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="sec-label">05 — اللغات والاهتمامات</span>
+        <h2 class="sec-title">اللغات ومجالات الاهتمام</h2>
+      </div>
+
+      <div class="duo">
+        <div class="info-card reveal">
+          <h3 class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-6-3.8-9S9.5 5.7 12 3Z"/></svg>
+            اللغات
+          </h3>
+          <div class="lang-row">
+            <span class="lang-name"><span class="flag" aria-hidden="true"></span> العربية</span>
+            <span class="lang-badge gold">اللغة الأم</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name"><span class="flag" aria-hidden="true"></span> الإنجليزية</span>
+            <span class="lang-badge">مبتدئ</span>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <h3 class="card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="3.4"/></svg>
+            مجالات الاهتمام
+          </h3>
+          <p class="card-sub">مجالات أهتم بها وأسعى لتطوير خبرتي فيها.</p>
+          <div class="chips">
+            <span class="chip">إدارة المعلومات</span>
+            <span class="chip">إدارة الوثائق والسجلات</span>
+            <span class="chip">الأرشفة الرقمية</span>
+            <span class="chip">تنظيم المعرفة</span>
+            <span class="chip">العمل الإداري في المؤسسات التعليمية والحكومية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== التواصل ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact reveal">
+        <div class="contact-text">
+          <span class="sec-label light">06 — تواصل</span>
+          <h2>لنتواصل</h2>
+          <p>يسعدني استقبال فرص العمل والتدريب التي تناسب خلفيتي في علم المعلومات والذكاء الاصطناعي.</p>
+          <div class="contact-actions">
+            <a class="btn btn-gold" href="mailto:mawadah.0033@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              أرسل رسالة
+            </a>
+            <button class="btn btn-ghost" type="button" data-copy="mawadah.0033@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              نسخ البريد
+            </button>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a href="mailto:mawadah.0033@gmail.com">mawadah.0033@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <a href="tel:+966557550227" dir="ltr">+966 55 755 0227</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>المدينة المنورة، المملكة العربية السعودية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 1.8 14.3 9.7 22.2 12l-7.9 2.3L12 22.2 9.7 14.3 1.8 12l7.9-2.3Z"/></svg>
+      مودة سمير كاشقري — أخصائية معلومات
+    </span>
+    <p>© <span id="year">2026</span> جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="العودة إلى أعلى الصفحة">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  'use strict';
+
+  var doc = document;
+  var body = doc.body;
+  var header = doc.querySelector('.site-header');
+  var progress = doc.querySelector('.scroll-progress');
+  var toTop = doc.querySelector('.to-top');
+  var toast = doc.querySelector('.toast');
+  var toastTimer = null;
+
+  /* السنة */
+  var year = doc.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  /* التمرير: ظل الترويسة + شريط التقدم + زر العودة */
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    if (header) header.classList.toggle('scrolled', y > 8);
+    var max = doc.documentElement.scrollHeight - window.innerHeight;
+    if (progress) progress.style.width = (max > 0 ? Math.min(y / max, 1) * 100 : 0) + '%';
+    if (toTop) toTop.classList.toggle('show', y > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  if (toTop) {
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ظهور العناصر عند التمرير */
+  var revealItems = Array.prototype.slice.call(doc.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+    revealItems.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealItems.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* تمييز رابط القسم النشط */
+  var navLinks = Array.prototype.slice.call(doc.querySelectorAll('.nav-links a'));
+  var sections = Array.prototype.slice.call(doc.querySelectorAll('main section[id]'));
+  if ('IntersectionObserver' in window && sections.length) {
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = '#' + entry.target.id;
+        navLinks.forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('href') === id);
+        });
+      });
+    }, { rootMargin: '-42% 0px -52% 0px', threshold: 0 });
+    sections.forEach(function (section) { sectionObserver.observe(section); });
+  }
+
+  /* قائمة الجوال */
+  var navToggle = doc.querySelector('.nav-toggle');
+  var navMenu = doc.getElementById('navMenu');
+
+  function closeMenu() {
+    body.classList.remove('menu-open');
+    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function () {
+      var open = body.classList.toggle('menu-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'إغلاق قائمة التنقل' : 'فتح قائمة التنقل');
+    });
+    navMenu.addEventListener('click', function (event) {
+      if (event.target.closest('a')) closeMenu();
+    });
+    doc.addEventListener('click', function (event) {
+      if (!body.classList.contains('menu-open')) return;
+      if (!event.target.closest('.site-header')) closeMenu();
+    });
+    doc.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeMenu();
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 940) closeMenu();
+    });
+  }
+
+  /* تنبيه صغير */
+  function showToast(message) {
+    if (!toast) return;
+    toast.textContent = message;
+    toast.classList.add('show');
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(function () {
+      toast.classList.remove('show');
+    }, 2600);
+  }
+
+  /* نسخ البريد الإلكتروني */
+  Array.prototype.forEach.call(doc.querySelectorAll('[data-copy]'), function (button) {
+    button.addEventListener('click', function () {
+      var text = button.getAttribute('data-copy');
+      var done = function () { showToast('تم نسخ البريد الإلكتروني بنجاح'); };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(function () { legacyCopy(text, done); });
+      } else {
+        legacyCopy(text, done);
+      }
+    });
+  });
+
+  function legacyCopy(text, done) {
+    var area = doc.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.top = '-1000px';
+    area.style.opacity = '0';
+    doc.body.appendChild(area);
+    area.select();
+    try {
+      if (doc.execCommand('copy')) done();
+      else showToast('تعذّر النسخ، يرجى المحاولة يدويًا');
+    } catch (error) {
+      showToast('تعذّر النسخ، يرجى المحاولة يدويًا');
+    }
+    doc.body.removeChild(area);
+  }
+})();
+</script>
 </body>
 </html>
